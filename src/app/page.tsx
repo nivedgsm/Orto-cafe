@@ -32,35 +32,35 @@ export default function Home() {
         <div className="hero-image" />
         <div className="hero-shade" />
         <div className="hero-content">
-          <p className="eyebrow light">A LITTLE SPACE TO SLOW DOWN</p>
-          <h1>Good coffee.<br/><em>Unhurried</em> moments.</h1>
+          <p className="eyebrow light">YOUR CORNER OF THE CITY</p>
+          <h1>Coffee, made<br/><em>for lingering.</em> moments.</h1>
           <p className="hero-copy">A neighbourhood café by the water, made for your everyday pause.</p>
-          <a className="button button-light" href="#story">DISCOVER ORTO <ArrowDownRight size={16}/></a>
+          <a className="button button-light" href="#story">STEP INSIDE <ArrowDownRight size={16}/></a>
         </div>
         <div className="hero-bottom"><span>25°11'42.0"N&nbsp; 55°14'08.9"E</span><span>JUMEIRAH · DUBAI</span></div>
         <div className="hero-index">01 <i/> 04</div>
       </section>
 
       <section className="intro section-pad" id="story">
-        <div className="intro-label"><span className="eyebrow">THE ORTO FEELING</span><span className="small-index">01 / A PLACE TO RETURN TO</span></div>
-        <div className="intro-main"><h2>Find your own<br/><em>kind of calm.</em></h2><div className="intro-text"><p>Some days call for a little more time. A coffee you can savour, something lovely to eat, and a view that gives you a reason to stay a while.</p><p>At Orto, the everyday is worth slowing down for. Come as you are. Stay for another cup.</p><a className="text-link" href={INSTAGRAM} target="_blank" rel="noreferrer">FOLLOW THE MOMENTS <ArrowRight size={15}/></a></div></div>
-        <div className="intro-image-wrap"><img src="https://www.citysearch.ae/uf/albums/40615/orto-cafe-dubai_17.jpg" alt="The Orto coffee bar and pastry counter"/><span>THE ART OF TAKING A MOMENT</span></div>
+        <div className="intro-label"><span className="eyebrow">A TABLE FOR EVERY DAY</span><span className="small-index">01 / YOUR DAILY LITTLE ESCAPE</span></div>
+        <div className="intro-main"><h2>Make yourself<br/><em>at home.</em></h2><div className="intro-text"><p>Settle into a sunlit seat, order something you love and let the day find its own pace.</p><p>From the first pour to the last bite, we make room for the moments that make an ordinary day feel special.</p><a className="text-link" href={INSTAGRAM} target="_blank" rel="noreferrer">A LITTLE MORE ORTO <ArrowRight size={15}/></a></div></div>
+        <div className="intro-image-wrap"><img src="https://www.citysearch.ae/uf/albums/40615/orto-cafe-dubai_17.jpg" alt="The Orto coffee bar and pastry counter"/><span>YOUR SEAT IN THE SUN</span></div>
       </section>
 
       <section className="menu-section section-pad" id="menu">
-        <div className="section-heading"><div><span className="eyebrow">MADE TO BE SAVOURED</span><h2>A good day<br/><em>starts here.</em></h2></div><p>From your first coffee to a long, easy brunch. A few favourites to set the mood.</p></div>
+        <div className="section-heading"><div><span className="eyebrow">FRESH FROM OUR KITCHEN</span><h2>A little something<br/><em>for every mood.</em></h2></div><p>Find your morning pick-me-up, a generous brunch or a sweet reason to stay.</p></div>
         <div className="menu-grid">
-          <article className="menu-card menu-card-large"><div className="menu-photo coffee-photo"/><div className="menu-card-bottom"><span>01 — THE COFFEE BAR</span><h3>Thoughtful<br/>coffee, always.</h3><p>Espresso classics, iced favourites and a little something unexpected.</p></div></article>
-          <article className="menu-card"><div className="menu-photo brunch-photo"/><div className="menu-card-bottom"><span>02 — BRUNCH & BITES</span><h3>Made for<br/>slow mornings.</h3><p>Comforting plates and familiar favourites, made for sharing.</p></div></article>
-          <article className="menu-card"><div className="menu-photo sweet-photo"/><div className="menu-card-bottom"><span>03 — SOMETHING SWEET</span><h3>One more<br/>little treat.</h3><p>A sweet finish, best enjoyed with another cup.</p></div></article>
+          <article className="menu-card menu-card-large"><div className="menu-photo coffee-photo"/><div className="menu-card-bottom"><span>01 — THE COFFEE BAR</span><h3>Your usual,<br/>done beautifully.</h3><p>Bold espresso, silky milk and chilled favourites, made just the way you like.</p></div></article>
+          <article className="menu-card"><div className="menu-photo brunch-photo"/><div className="menu-card-bottom"><span>02 — BRUNCH & BITES</span><h3>Brunch is<br/>better together.</h3><p>Fresh, feel-good plates for long breakfasts and unhurried catch-ups.</p></div></article>
+          <article className="menu-card"><div className="menu-photo sweet-photo"/><div className="menu-card-bottom"><span>03 — SOMETHING SWEET</span><h3>Save room<br/>for something sweet.</h3><p>A little indulgence to pair with your next coffee.</p></div></article>
         </div>
-        <p className="menu-note">A selection of highlights. Please ask our team for the current menu and availability.</p>
+        <p className="menu-note">Our menu changes with the day. Ask our team what is fresh and in season.</p>
       </section>
 
-      <section className="quote-band"><div className="quote-mark">“</div><p>Make room for<br/><em>the little things.</em></p><span>COFFEE · COMPANY · CANAL VIEWS</span></section>
+      <section className="quote-band"><div className="quote-mark">“</div><p>Good things happen<br/><em>when you slow down.</em></p><span>COFFEE · COMPANY · CANAL VIEWS</span></section>
 
       <section className="space-section section-pad" id="space">
-        <div className="space-heading"><span className="eyebrow">A PLACE WITH A VIEW</span><h2>Stay a little<br/><em>longer.</em></h2><p>Sunlight through the windows. Greenery at the edges. The gentle rhythm of the water just outside.</p></div>
+        <div className="space-heading"><span className="eyebrow">TAKE IN THE SURROUNDINGS</span><h2>Settle in<br/><em>and stay awhile.</em></h2><p>A favourite corner, a little greenery and the easy hum of the neighbourhood. There is always room to linger.</p></div>
         <div className="gallery-grid">
           {photos.map((photo, i) => <div className={`gallery-item gallery-${i+1}`} key={photo.src}><img src={photo.src} alt={photo.alt}/><span>0{i+1}</span></div>)}
         </div>
@@ -68,12 +68,12 @@ export default function Home() {
 
       <section className="visit-section" id="visit">
         <div className="visit-image" />
-        <div className="visit-content"><span className="eyebrow light">YOUR TABLE IS WAITING</span><h2>Meet us<br/><em>by the water.</em></h2><p>395 Al Athar Street<br/>Jumeirah 2, Dubai, UAE</p><div className="visit-actions"><a className="button button-light" href={MAPS} target="_blank" rel="noreferrer">GET DIRECTIONS <ArrowRight size={16}/></a><a className="visit-phone" href={`tel:${PHONE}`}><Phone size={15}/> +971 4 345 5060</a></div><div className="hours"><span>EVERY DAY</span><strong>7:00 AM — 12:00 AM</strong></div></div>
+        <div className="visit-content"><span className="eyebrow light">COME ON IN</span><h2>Your next coffee<br/><em>is right here.</em></h2><p>395 Al Athar Street<br/>Jumeirah 2, Dubai, UAE</p><div className="visit-actions"><a className="button button-light" href={MAPS} target="_blank" rel="noreferrer">GET DIRECTIONS <ArrowRight size={16}/></a><a className="visit-phone" href={`tel:${PHONE}`}><Phone size={15}/> +971 4 345 5060</a></div><div className="hours"><span>EVERY DAY</span><strong>7:00 AM — 12:00 AM</strong></div></div>
       </section>
 
       <footer className="footer">
-        <div className="footer-top"><img src="/orto-wordmark.svg" alt="Orto"/><p>A moment to yourself.<br/>A place to come together.</p><a className="instagram-link" href={INSTAGRAM} target="_blank" rel="noreferrer"><Instagram size={17}/> FOLLOW ALONG <ArrowUpRightFallback/></a></div>
-        <div className="footer-bottom"><span>© {new Date().getFullYear()} ORTO CAFÉ</span><span>JUMEIRAH, DUBAI</span><a href={MAPS} target="_blank" rel="noreferrer"><MapPin size={13}/> OPEN IN MAPS</a><span>MADE FOR SLOW MOMENTS.</span></div>
+        <div className="footer-top"><img src="/orto-wordmark.svg" alt="Orto"/><p>Come for the coffee.<br/>Stay for the feeling.</p><a className="instagram-link" href={INSTAGRAM} target="_blank" rel="noreferrer"><Instagram size={17}/> FOLLOW ALONG <ArrowUpRightFallback/></a></div>
+        <div className="footer-bottom"><span>© {new Date().getFullYear()} ORTO CAFÉ</span><span>JUMEIRAH, DUBAI</span><a href={MAPS} target="_blank" rel="noreferrer"><MapPin size={13}/> OPEN IN MAPS</a><a className="developer-credit" href="https://lightseagreen-raven-843615.hostingersite.com/" target="_blank" rel="noreferrer">DESIGNED &amp; DEVELOPED BY NIVED <ArrowRight size={12}/></a></div>
       </footer>
     </main>
   );
